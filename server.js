@@ -142,15 +142,15 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-     res.send(createTemplate(articleOne));
+     res.send(createTemplate(articles[articleOne]));
 });
 
 app.get('/article-two', function (req, res) {
-     res.send(createTemplate(articleTwo));
+     res.send(createTemplate(articles[articleTwo]));
 });
 
 app.get('/article-three', function (req, res) {
-     res.send(createTemplate(articleTwo));
+     res.send(createTemplate(articles[articleThree]));
 });
 
 app.get('/ui/madi.png', function (req, res) {
