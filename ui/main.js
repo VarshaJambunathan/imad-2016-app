@@ -30,5 +30,11 @@ submit.onclick = function() {
     //make a request to the server and send the name
     
     //capture a set of names and render it as a list
-    var name = ['name 1*', 'name 2*','name 3*' ]
-}
+    var names = ['name 1*', 'name 2*','name 3*' ];
+    var list = '';
+    for( var i=0;i<names.length;i++) {
+        list += '<li>' + names[i] + '</li>';
+    }
+    var ul = document.getElementById('namelist');
+    ul.innerHTML = list;
+};
