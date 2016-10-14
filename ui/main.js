@@ -22,15 +22,11 @@ button.onclick = function() {
   request.send(null);
 };
 
-//send name
-var nameInput = document.getElementById('name');
-
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     //make a request to the server and send the name
     // create a request
   var request = new XMLHttpRequest();
-  var name = nameInput.value;
   
   // capture the response and store it in a variable
   request.onreadystatechange = function() {
@@ -50,6 +46,10 @@ submit.onclick = function() {
       }
       //request not served
   };
+  
+  //send name
+  var nameInput = document.getElementById('name');
+  var name = nameInput.value;
   //make a request to counter endpoint
   request.open('GET','http://varshajambunathan.imad.hasura-app.io/submit-name' +name ,true);
   request.send(null);
