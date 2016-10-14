@@ -164,10 +164,10 @@ app.get('/counter', function (req, res) {
   res.send(counter.toString());
 });
 
-app.get('/:articleName', function (req, res) { 
+/* app.get('/:articleName', function (req, res) { 
     var articleName = req.params.articleName; 
     res.send(createTemplate(articles[articleName])); 
-});
+});*/
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
