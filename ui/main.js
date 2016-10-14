@@ -28,13 +28,29 @@ var name = nameInput.value;
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     //make a request to the server and send the name
+    // create a request
+  var request = new XMLHttpRequest();
+  
+  // capture the response and store it in a variable
+  request.onreadystatechange = function() {
+      if( request.readyState === XMLHttpRequest.DONE){
+        //do something  
+        if( request.status === 200){
+            //capture a set of names and render it as a list
+            var names = request.responseText;
+            names = JSON.parse(names);
+            var list = '';
+            for( var i=0;i<names.length;i++) {
+                list += '<li>' + names[i] + '</li>';
+            }
+            var ul = document.getElementById('namelist');
+            ul.innerHTML = list;
+        }
+      }
+      //request not served
+  };
+  //make a request to counter endpoint
+  request.open('GET','http://varshajambunathan.imad.hasura-app.io/submit-name' +name ,true);
+  request.send(null);
     
-    //capture a set of names and render it as a list
-    var names = ['name 1*', 'name 2*','name 3*' ];
-    var list = '';
-    for( var i=0;i<names.length;i++) {
-        list += '<li>' + names[i] + '</li>';
-    }
-    var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
 };
