@@ -21,3 +21,14 @@ button.onclick = function() {
   request.open('GET','http://varshajambunathan.imad.hasura-app.io/counter',true);
   request.send(null);
 };
+
+//send name
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function() {
+    //make a request to the server and send the name
+    
+    //capture a set of names and render it as a list
+    var name = ['name 1*', 'name 2*','name 3*' ]
+}
