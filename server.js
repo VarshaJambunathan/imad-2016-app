@@ -150,7 +150,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/profile', function (req, res) {
-  res.send("This page will be served soon!");
+  res.sendFile(path.join(__dirname, 'ui', 'resume.html'));
 });
 
 var names=[];
