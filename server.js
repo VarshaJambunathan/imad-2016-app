@@ -149,6 +149,10 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+app.get('/profile', function (req, res) {
+  res.send("This page will be served soon!");
+});
+
 var names=[];
 app.get('/submit-name', function (req, res) {
   //get the current name from the request object
