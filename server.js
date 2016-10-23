@@ -17,27 +17,6 @@ var articles = {
                 This the content of my first article
                 This the content of my first article
                 </p>
-                <p>
-                    This the content of my first article
-                    This the content of my first article
-                This the content of my first article
-                This the content of my first article
-                This the content of my first article
-                </p>
-                <p>
-                    This the content of my first article
-                    This the content of my first article
-                This the content of my first article
-                This the content of my first article
-                This the content of my first article
-                </p>
-                <p>
-                    This the content of my first article
-                    This the content of my first article
-                This the content of my first article
-                This the content of my first article
-                This the content of my first article
-                </p>`
     },
     'article-two' :{
         title:' Article One | Varsha J',
@@ -49,24 +28,6 @@ var articles = {
                 This the content of my second article.
                 This the content of my second article.
             </p>
-            <p>
-                This the content of my second article.
-                This the content of my second article.
-                This the content of my second article.
-                This the content of my second article.
-            </p>
-            <p>
-                This the content of my second article.
-                This the content of my second article.
-                This the content of my second article.
-                This the content of my second article.
-            </p>
-            <p>
-                This the content of my second article.
-                This the content of my second article.
-                This the content of my second article.
-                This the content of my second article.
-            </p>`
     },
     'article-three' :{
         title:' Article One | Varsha J',
@@ -78,24 +39,6 @@ var articles = {
                   This the content of my third article.
                    This the content of my third article.
             </p>
-             <p>
-                This the content of my third article.
-                 This the content of my third article.
-                  This the content of my third article.
-                   This the content of my third article.
-            </p>
-             <p>
-                This the content of my third article.
-                 This the content of my third article.
-                  This the content of my third article.
-                   This the content of my third article.
-            </p>
-             <p>
-                This the content of my third article.
-                 This the content of my third article.
-                  This the content of my third article.
-                   This the content of my third article.
-            </p>`
     }
 };
 
