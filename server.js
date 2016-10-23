@@ -149,7 +149,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/profile', function (req, res) {
+app.get('/resume', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'resume.html'));
 });
 
