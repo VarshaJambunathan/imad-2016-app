@@ -7,8 +7,10 @@ body {
     text-align: center;
 }
 
-.imagepadding {
-    padding-left:130px
+.pic-props {
+    padding-left:130px;
+    height:250px;
+    width=210px;
 }
 
 .text-big {
