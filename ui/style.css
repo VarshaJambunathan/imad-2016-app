@@ -7,6 +7,10 @@ body {
     text-align: center;
 }
 
+.imagepadding {
+    padding-left:30px
+}
+
 .text-big {
     font-size: 300%;
 }
@@ -26,4 +30,3 @@ body {
     padding-left:20px;
     padding-right:20px;
 }
-
