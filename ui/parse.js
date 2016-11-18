@@ -1,2 +1,2 @@
 var globalJSON;
-window.alert("Heyy!!");
+alert("Heyy!!");
